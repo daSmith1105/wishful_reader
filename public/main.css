@@ -104,10 +104,6 @@ body {
     width: 25px;
 }
 
-.book-info {}
-
-.book-info>p {}
-
 .data-input-modal,
 .data-modify-modal {
     transition: .3s;
@@ -120,8 +116,6 @@ body {
     border: 14px solid rgba(223, 85, 5, .3);
     border-radius: 10px;
 }
-
-.modal-close {}
 
 .close-btn,
 .close-mod-btn {
