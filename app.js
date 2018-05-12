@@ -1,7 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-const indexRouter = require('./routes/index');
 const booksRouter = require('./routes/books');
 const app = express();
 
@@ -14,7 +13,6 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
-app.use('/', indexRouter);
 app.use('/books', booksRouter);
 
 const { DATABASE_URL, PORT } = require('./config');
