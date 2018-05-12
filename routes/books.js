@@ -3,7 +3,9 @@ const router = express.Router();
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 const app = express();
-const { EntryModel } = require('./models');
+const { EntryModel } = require('../models');
+const mongoose = require('mongoose');
+
 mongoose.Promise = global.Promise;
 
 app.use(express.json());
